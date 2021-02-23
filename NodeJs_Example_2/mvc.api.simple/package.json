@@ -1,0 +1,59 @@
+{
+  "name": "rest.api",
+  "version": "0.0.1",
+  "description": "Node.js RESTful API Server. It's base example include token authorisation and sample of CRUD (create, read, update, delete) operations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "start": "nodemon ./index.js --delay 3 --exec babel-node --presets es2015,stage-2",
+    "build": "babel . -d dist --presets es2015,stage-2 --ignore node_modules,test",
+    "serve": "node dist/index.js",
+
+    "lint": "eslint ./index.js"
+  },
+  "devtool": "source-map",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simdo/rest.api.git"
+  },
+  "keywords": [
+    "RESTful API Server"
+  ],
+  "bugs": {
+    "url": "https://github.com/simdo/rest.api/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.2.1",
+    "mongoose": "^4.7.8",
+    "mongoose-timestamp": "^0.6.0",
+    "postmark": "^1.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3",
+    "babel-cli": "6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^7.0.0",
+    "babel-plugin-inline-import": "^2.0.1",
+    "babel-plugin-transform-async-to-module-method": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-react": "^6.4.1"
+  },
+  "nodemonConfig": {
+    "ignore": ["test/*", "test.js"],
+    "delay": "2500"
+  }
+
+}

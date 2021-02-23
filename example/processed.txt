@@ -1,0 +1,237 @@
+Testing v8 version different from logging version
+Statistical profiling result from isolate-0x50480c0-16707-v8.log, (203 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    139   68.5%          /home/jeka/.nvm/versions/node/v14.4.0/bin/node
+      4    2.0%          /lib/x86_64-linux-gnu/libc-2.27.so
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+
+ [C++]:
+   ticks  total  nonlib   name
+     15    7.4%   25.0%  write
+     14    6.9%   23.3%  __lll_lock_wait
+     12    5.9%   20.0%  do_futex_wait.constprop.1
+      8    3.9%   13.3%  epoll_pwait
+      3    1.5%    5.0%  __libc_malloc
+      2    1.0%    3.3%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      2    1.0%    3.3%  mprotect
+      2    1.0%    3.3%  fwrite
+      1    0.5%    1.7%  std::ostream::sentry::sentry(std::ostream&)
+      1    0.5%    1.7%  cfree
+
+ [Summary]:
+   ticks  total  nonlib   name
+      0    0.0%    0.0%  JavaScript
+     60   29.6%  100.0%  C++
+     51   25.1%   85.0%  GC
+    143   70.4%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+      3   42.9%    1.5%  write
+      3   42.9%    1.5%  __libc_malloc
+      1   14.3%    0.5%  cfree
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    139   68.5%  /home/jeka/.nvm/versions/node/v14.4.0/bin/node
+     68   48.9%    /home/jeka/.nvm/versions/node/v14.4.0/bin/node
+     22   32.4%      LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+     22  100.0%        LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:296:29
+      2    9.1%          Eval: ~<anonymous> http.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      2    9.1%          Eval: ~<anonymous> events.js:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          LazyCompile: ~setupPrepareStackTrace internal/bootstrap/node.js:250:32
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    4.5%          LazyCompile: ~initializeCJSLoader internal/bootstrap/pre_execution.js:399:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:14:36
+      1    4.5%          LazyCompile: ~createWritableStdioStream internal/bootstrap/switches/is_main_thread.js:37:35
+      1  100.0%            LazyCompile: ~getStdout internal/bootstrap/switches/is_main_thread.js:116:19
+      1    4.5%          Eval: ~<anonymous> stream.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> net.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> internal/url.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> internal/source_map/source_map_cache.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> internal/process/esm_loader.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> internal/modules/esm/loader.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> internal/modules/cjs/loader.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> internal/console/global.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      1    4.5%          Eval: ~<anonymous> fs.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> dns.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> cluster.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> child_process.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> buffer.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1    4.5%          Eval: ~<anonymous> _stream_readable.js:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      7   10.3%      LazyCompile: ~writevGeneric internal/stream_base_commons.js:116:23
+      7  100.0%        LazyCompile: ~Socket._writev net.js:788:36
+      7  100.0%          LazyCompile: ~doWrite _stream_writable.js:367:17
+      7  100.0%            LazyCompile: ~clearBuffer _stream_writable.js:481:21
+      4    5.9%      LazyCompile: ~endReadable _stream_readable.js:1207:21
+      4  100.0%        LazyCompile: ~Readable.read _stream_readable.js:383:35
+      4  100.0%          LazyCompile: ~flow _stream_readable.js:982:14
+      4  100.0%            LazyCompile: ~emitReadable_ _stream_readable.js:558:23
+      3    4.4%      LazyCompile: ~internalBinding internal/bootstrap/loaders.js:132:45
+      1   33.3%        Eval: ~<anonymous> internal/util/inspect.js:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:296:29
+      1   33.3%        Eval: ~<anonymous> internal/util.js:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:296:29
+      1   33.3%        Eval: ~<anonymous> internal/options.js:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:296:29
+      3    4.4%      LazyCompile: ~<anonymous> file:///home/jeka/projects/node/example/app.js:16:17
+      3  100.0%        LazyCompile: ~endReadableNT _stream_readable.js:1217:23
+      2    2.9%      LazyCompile: ~onconnection net.js:1526:22
+      2    2.9%      LazyCompile: ~cache internal/http.js:23:15
+      2  100.0%        LazyCompile: ~utcDate internal/http.js:18:17
+      2  100.0%          LazyCompile: ~_storeHeader _http_outgoing.js:352:22
+      2  100.0%            LazyCompile: ~writeHead _http_server.js:244:19
+      1    1.5%      LazyCompile: ~socketListenerWrap _http_server.js:835:37
+      1  100.0%        LazyCompile: ~assignSocket _http_server.js:214:62
+      1  100.0%          LazyCompile: ~parserOnIncoming _http_server.js:724:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete _http_common.js:72:33
+      1    1.5%      LazyCompile: ~resume _stream_readable.js:951:16
+      1  100.0%        LazyCompile: ~Readable.resume _stream_readable.js:937:37
+      1  100.0%          LazyCompile: ~<anonymous> file:///home/jeka/projects/node/example/app.js:6:34
+      1  100.0%            LazyCompile: ~parserOnIncoming _http_server.js:724:26
+      1    1.5%      LazyCompile: ~resOnFinish _http_server.js:678:21
+      1  100.0%        LazyCompile: ~onFinish _http_outgoing.js:739:18
+      1  100.0%          LazyCompile: ~callback _stream_writable.js:499:44
+      1    1.5%      LazyCompile: ~readStart _http_incoming.js:31:19
+      1  100.0%        LazyCompile: ~parserOnMessageComplete _http_common.js:136:33
+      1    1.5%      LazyCompile: ~prefinish _stream_writable.js:610:19
+      1  100.0%        LazyCompile: ~Writable.end _stream_writable.js:542:34
+      1  100.0%          LazyCompile: ~Socket.end net.js:587:32
+      1  100.0%            LazyCompile: ~Socket.destroySoon net.js:639:40
+      1    1.5%      LazyCompile: ~parserOnIncoming _http_server.js:724:26
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete _http_common.js:72:33
+      1    1.5%      LazyCompile: ~onReadableStreamEnd net.js:627:29
+      1  100.0%        LazyCompile: ~endReadableNT _stream_readable.js:1217:23
+      1  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:69:35
+      1    1.5%      LazyCompile: ~initializeReportSignalHandlers internal/bootstrap/pre_execution.js:184:40
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:14:36
+      1  100.0%          Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+      1    1.5%      LazyCompile: ~initializeESMLoader internal/bootstrap/pre_execution.js:407:29
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution internal/bootstrap/pre_execution.js:14:36
+      1  100.0%          Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+      1    1.5%      LazyCompile: ~getESMFacade internal/bootstrap/loaders.js:230:15
+      1  100.0%        LazyCompile: ~compileForPublicLoader internal/bootstrap/loaders.js:212:25
+      1  100.0%          LazyCompile: ~loadNativeModule internal/modules/cjs/helpers.js:21:26
+      1  100.0%            LazyCompile: ~builtinStrategy internal/modules/esm/translators.js:127:58
+      1    1.5%      LazyCompile: ~executeUserEntryPoint internal/modules/run_main.js:64:31
+      1  100.0%        Eval: ~<anonymous> internal/main/run_main_module.js:1:1
+      1    1.5%      LazyCompile: ~defaultResolve internal/modules/esm/resolve.js:710:24
+      1  100.0%        LazyCompile: ~resolve internal/modules/esm/loader.js:92:16
+      1  100.0%          LazyCompile: ~getModuleJob internal/modules/esm/loader.js:241:21
+      1  100.0%            LazyCompile: ~import internal/modules/esm/loader.js:176:15
+      1    1.5%      LazyCompile: ~defaultGetSource internal/modules/esm/get_source.js:16:32
+      1  100.0%        LazyCompile: ~moduleStrategy internal/modules/esm/translators.js:80:56
+      1  100.0%          LazyCompile: ~ModuleJob internal/modules/esm/module_job.js:29:14
+      1  100.0%            LazyCompile: ~getModuleJob internal/modules/esm/loader.js:241:21
+      1    1.5%      LazyCompile: ~connectionListenerInternal _http_server.js:407:36
+      1  100.0%        LazyCompile: ~connectionListener _http_server.js:401:28
+      1  100.0%          LazyCompile: ~onconnection net.js:1526:22
+      1    1.5%      LazyCompile: ~_storeHeader _http_outgoing.js:352:22
+      1  100.0%        LazyCompile: ~writeHead _http_server.js:244:19
+      1  100.0%          LazyCompile: ~_implicitHeader _http_server.js:239:68
+      1  100.0%            LazyCompile: ~write_ _http_outgoing.js:653:16
+      1    1.5%      LazyCompile: ~_implicitHeader _http_server.js:239:68
+      1  100.0%        LazyCompile: ~write_ _http_outgoing.js:653:16
+      1  100.0%          LazyCompile: ~write _http_outgoing.js:635:49
+      1  100.0%            LazyCompile: ~<anonymous> file:///home/jeka/projects/node/example/app.js:16:17
+      1    1.5%      LazyCompile: ~_addHeaderLines _http_incoming.js:130:25
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete _http_common.js:72:33
+      1    1.5%      LazyCompile: ~_addHeaderLine _http_incoming.js:264:24
+      1  100.0%        LazyCompile: ~_addHeaderLines _http_incoming.js:130:25
+      1  100.0%          LazyCompile: ~parserOnHeadersComplete _http_common.js:72:33
+      1    1.5%      LazyCompile: ~Socket.resume net.js:608:35
+      1  100.0%        LazyCompile: ~connectionListenerInternal _http_server.js:407:36
+      1  100.0%          LazyCompile: ~connectionListener _http_server.js:401:28
+      1  100.0%            LazyCompile: ~onconnection net.js:1526:22
+      1    1.5%      LazyCompile: ~Readable.read _stream_readable.js:383:35
+      1  100.0%        LazyCompile: ~Socket.read net.js:617:33
+      1  100.0%          LazyCompile: ~onconnection net.js:1526:22
+      1    1.5%      LazyCompile: ~OutgoingMessage _http_outgoing.js:82:25
+      1  100.0%        LazyCompile: ~ServerResponse _http_server.js:153:24
+      1  100.0%          LazyCompile: ~parserOnIncoming _http_server.js:724:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete _http_common.js:72:33
+      1    1.5%      Eval: ~<anonymous> internal/async_hooks.js:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:296:29
+      1  100.0%            Eval: ~<anonymous> internal/bootstrap/node.js:1:1
+      5    3.6%    LazyCompile: ~IncomingMessage _http_incoming.js:42:25
+      5  100.0%      LazyCompile: ~parserOnHeadersComplete _http_common.js:72:33
+      4    2.9%    LazyCompile: ~onconnection net.js:1526:22
+      3    2.2%    LazyCompile: ~connectionListenerInternal _http_server.js:407:36
+      3  100.0%      LazyCompile: ~connectionListener _http_server.js:401:28
+      3  100.0%        LazyCompile: ~onconnection net.js:1526:22
+      2    1.4%    LazyCompile: ~finish _stream_writable.js:639:16
+      2  100.0%      LazyCompile: ~<anonymous> _stream_writable.js:598:17
+      2  100.0%        LazyCompile: ~afterShutdown net.js:425:23
+      2    1.4%    LazyCompile: ~endReadable _stream_readable.js:1207:21
+      2  100.0%      LazyCompile: ~Readable.read _stream_readable.js:383:35
+      1   50.0%        LazyCompile: ~resume_ _stream_readable.js:958:17
+      1   50.0%        LazyCompile: ~flow _stream_readable.js:982:14
+      1  100.0%          LazyCompile: ~emitReadable_ _stream_readable.js:558:23
+
+     15    7.4%  write
+      3   20.0%    /home/jeka/.nvm/versions/node/v14.4.0/bin/node
+      1   33.3%      LazyCompile: ~listOnTimeout internal/timers.js:497:25
+      1  100.0%        LazyCompile: ~processTimers internal/timers.js:477:25
+      1   33.3%      LazyCompile: ~getPackageType internal/modules/esm/resolve.js:515:24
+      1  100.0%        LazyCompile: ~defaultGetFormat internal/modules/esm/get_format.js:36:26
+      1  100.0%          LazyCompile: ~getFormat internal/modules/esm/loader.js:112:18
+      1  100.0%            LazyCompile: ~getModuleJob internal/modules/esm/loader.js:241:21
+      1   33.3%      LazyCompile: ~Socket net.js:264:16
+      1  100.0%        LazyCompile: ~WriteStream tty.js:84:21
+      1  100.0%          LazyCompile: ~createWritableStdioStream internal/bootstrap/switches/is_main_thread.js:37:35
+      1  100.0%            LazyCompile: ~getStdout internal/bootstrap/switches/is_main_thread.js:116:19
+
+     14    6.9%  __lll_lock_wait
+
+     12    5.9%  do_futex_wait.constprop.1
+
+      8    3.9%  epoll_pwait
+
+      4    2.0%  /lib/x86_64-linux-gnu/libc-2.27.so
+      2   50.0%    /home/jeka/.nvm/versions/node/v14.4.0/bin/node
+      1   50.0%      LazyCompile: ~setHeader _http_outgoing.js:531:57
+      1  100.0%        LazyCompile: ~<anonymous> file:///home/jeka/projects/node/example/app.js:16:17
+      1  100.0%          LazyCompile: ~endReadableNT _stream_readable.js:1217:23
+      1   50.0%      LazyCompile: ~connectionListener _http_server.js:401:28
+      1  100.0%        LazyCompile: ~onconnection net.js:1526:22
+
+      3    1.5%  __libc_malloc
+      3  100.0%    /home/jeka/.nvm/versions/node/v14.4.0/bin/node
+      1   33.3%      LazyCompile: ~Socket.destroySoon net.js:639:40
+      1  100.0%        LazyCompile: ~resOnFinish _http_server.js:678:21
+      1  100.0%          LazyCompile: ~onFinish _http_outgoing.js:739:18
+      1  100.0%            LazyCompile: ~callback _stream_writable.js:499:44
+      1   33.3%      Eval: ~<anonymous> child_process.js:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader internal/bootstrap/loaders.js:263:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire internal/bootstrap/loaders.js:296:29
+      1  100.0%            Eval: ~<anonymous> internal/cluster/master.js:1:1
+

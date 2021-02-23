@@ -1,0 +1,48 @@
+
+version: '3'
+
+services:
+  roach-ui:
+    image: cockroachdb/cockroach:${COCKROACH_VERSION:-v2.0.0}
+    command: start --insecure
+    expose:
+    - "8080"
+    - "26257"
+    ports:
+    - "26257:26257"
+    - "8080:8080"
+    networks:
+    - roachnet
+    volumes:
+    - ./data/roach-ui:/cockroach/cockroach-data
+  roach-one:
+    image: cockroachdb/cockroach:${COCKROACH_VERSION:-v2.0.0}
+    command: start --insecure --join=roach-ui
+    networks:
+    - roachnet
+    volumes:
+    - ./data/roach-one:/cockroach/cockroach-data
+  roach-two:
+    image: cockroachdb/cockroach:${COCKROACH_VERSION:-v2.0.0}
+    command: start --insecure --join=roach-ui
+    networks:
+    - roachnet
+    volumes:
+    - ./data/roach-two:/cockroach/cockroach-data
+  roach-three:
+    image: cockroachdb/cockroach:${COCKROACH_VERSION:-v2.0.0}
+    command: start --insecure --join=roach-ui
+    networks:
+    - roachnet
+    volumes:
+    - ./data/roach-three:/cockroach/cockroach-data
+  roach-four:
+    image: cockroachdb/cockroach:${COCKROACH_VERSION:-v2.0.0}
+    command: start --insecure --join=roach-ui
+    networks:
+    - roachnet
+    volumes:
+    - ./data/roach-four:/cockroach/cockroach-data
+
+networks:
+  roachnet:

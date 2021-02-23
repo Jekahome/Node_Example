@@ -1,0 +1,40 @@
+
+
+<div id="status" class="subtitle" ></div>
+
+<!--
+Разрешения на доступ к информации https://developers.facebook.com/docs/permissions/reference#revokelogin
+-->
+
+<section id="login_block" class="section" visible="hidden">
+    <div class="container">
+        <!-- FORM LOGIN USER -->
+        <form class="box" role="form" action="/signin" method="POST" >
+            <input type="hidden" name="_csrf" value="{{_csrfToken}}" >
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input name="email" class="input" type="email" placeholder="email" value="">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Password</label>
+                <div class="control">
+                    <input name="password" class="input" type="password" placeholder="password" value="">
+                </div>
+            </div>
+            <button class="button is-primary">Sign in</button>
+        </form>
+    </div>
+</section>
+
+<div class="buttons">
+    <a href="/auth/facebook">
+        <button class="button is-link">Facebook authentication</button>
+    </a>
+    <a href="/auth/google">
+        <button class="button is-link">Google authentication</button>
+    </a>
+</div>
+
+

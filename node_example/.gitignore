@@ -1,0 +1,7 @@
+#./credentials.js
+.env
+ui/public/images
+node_modules/
+# ssl
+
+

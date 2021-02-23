@@ -1,0 +1,53 @@
+https://www.cockroachlabs.com/docs/stable/build-a-rust-app-with-cockroachdb.html
+https://crates.io/crates/postgres/
+
+
+ВАЖНО!
+Поднимать кластер из трех узлов на SSD диске иначе не будет работать.
+
+$ docker-compose up
+
+
+Создать пользователя с именем jeka
+$ docker-compose exec roach-ui ./cockroach user set jeka --insecure
+INSERT 1
+
+
+Создайте базу данных и предоставьте привилегии
+
+$ docker-compose exec roach-ui ./cockroach sql --insecure -e 'CREATE DATABASE storage'
+Затем предоставить привилегии для jeka пользователя.
+
+Дать привилегии пользователю
+$ docker-compose exec roach-ui ./cockroach sql --insecure -e 'GRANT ALL ON DATABASE storage TO jeka'
+GRANT
+
+Запуск клиента
+$ docker-compose exec roach-ui ./cockroach sql --insecure  --database=books --user=jeka --port=26257
+$ docker-compose exec roach-ui ./cockroach sql --insecure  --url=postgresql://jeka@localhost:26257/storage
+
+
+
+Создайте таблицу в новой базе данных
+$ docker-compose exec roach-ui ./cockroach sql --insecure \
+--database=storage \
+--user=jeka \
+-e 'CREATE TABLE authors (id INT PRIMARY KEY, balance INT)'
+
+или
+
+Запуск клиента
+$ docker-compose exec roach-ui ./cockroach sql --insecure
+root@:26257> CREATE DATABASE storage;
+root@:26257> CREATE TABLE storage.authors (id INT PRIMARY KEY, balance INT);
+root@:26257> INSERT INTO storage.authors VALUES (1, 1000);
+root@:26257> SELECT * FROM storage.authors;
+root@:26257> show databases; // show users;
+root@:26257> use storage; // root@:26257/> SET database = storage
+root@:26257/books> show tables;
+$ docker-compose exec roach-ui ./cockroach sql --insecure --database=storage
+
+CREATE TABLE IF NOT EXISTS storage.users (id  INT PRIMARY KEY DEFAULT unique_rowid(), email VARCHAR(100)  NOT NULL  UNIQUE, nickname VARCHAR(100) NOT NULL UNIQUE, first_name VARCHAR(100) DEFAULT '', last_name VARCHAR(100) DEFAULT '', birth_date VARCHAR(100) );
+
+Монитор
+http://127.0.0.1:8081/#/databases/tables

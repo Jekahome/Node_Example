@@ -1,0 +1,38 @@
+{
+  "name": "learneng",
+  "version": "1.0.0",
+  "description": "For learn English",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "jquery": "^3.4.1",
+    "sinon": "^7.5.0",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^12.11.1",
+    "eslint-plugin-mocha": "^6.1.1",
+    "faker": "^4.1.0",
+    "mocha": "^6.2.0",
+    "mocha-testcheck": "^1.0.0-rc.0",
+    "node-mocks-http": "^1.8.0",
+    "supertest": "^4.0.2",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "test": "mocha test/**/*.js",
+    "start": "node server.js"
+  },
+  "author": "Jeka",
+  "license": "ISC"
+}

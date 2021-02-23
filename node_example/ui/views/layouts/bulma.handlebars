@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Hello Bulma!</title>
+    {{#if showTests}}
+        <link rel="stylesheet" href="/vendor/mocha.css">
+    {{/if}}
+    <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script> -->
+    <!-- вставка из body шаблонов #section 'head' -->
+    {{{_sections.head}}}
+</head>
+<body>
+
+<!-- FACEBOOK LOGIN -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v9.0&appId=427525085164031&autoLogAppEvents=1" nonce="0tH4JAC5"></script>
+
+
+
+    <div class="container is-widescreen">
+            {{> navbar}}
+        <!--  <header><img src="/images/logo.jpg" alt="Логотип Meadowlark Travel"></header> -->
+
+        <!-- Экстренные сообщения пользователю -->
+        {{#if flash}}
+            <div class="notification is-{{flash.type}} is-light">
+                <button class="delete"></button>
+                <strong>{{flash.intro}}</strong> {{{flash.message}}}
+            </div>
+            <script>
+                $(document).ready(function(){
+                    (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+                        const $notification = $delete.parentNode;
+
+                        $delete.addEventListener('click', () => {
+                            $notification.parentNode.removeChild($notification);
+                        });
+                    });
+                });
+            </script>
+        {{/if}}
+
+
+
+        <!-- Шаблоны view handlebars -->
+        {{{body}}}
+
+        <!-- При тестировании на странице -->
+        {{#if showTests}}
+            <div id="mocha"></div>
+            <script src="/vendor/mocha.js"></script>
+            <script src="/vendor/chai.js"></script>
+            <script>
+                mocha.ui('tdd');
+                const assert = chai.assert;
+            </script>
+            <script src="/qa/tests-global.js"></script>
+            {{#if pageTestScript}}
+                <script src="{{pageTestScript}}"></script>
+            {{/if}}
+            <script>mocha.run();</script>
+        {{/if}}
+
+        <!-- вставка из body шаблонов #section 'jquery' -->
+        {{{_sections.jquery}}}
+    </div>
+</body>
+</html>

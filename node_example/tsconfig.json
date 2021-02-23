@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": ["es5", "es6", "dom","es7","es2015"],
+    "target": "es2020",
+    "module": "es6",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strict": true
+  },
+  "include": [
+    "."
+  ],
+  "exclude":[
+    "node_modules",
+    "db/cockroach"
+  ]
+}

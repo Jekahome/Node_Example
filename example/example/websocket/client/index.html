@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Web Sockets + Node.js</title>
+</head>
+<body>
+<!--
+Если сокет открыт, сервер может отправлять данные во все подключенные сокеты, и ему
+не приходится непрерывно отвечать на входящие запросы Ajax.
+
+Если пересылать данные при помощи унылого Ajax (по мере ввода текста), то новый
+объект XHR придется создавать после каждого нажатия клавиши,
+причем каждый запрос будет содержать все заголовки обычного XHR-запроса,
+-->
+
+<!-- форма для отправки сообщений -->
+<form name="publish">
+    <input type="text" name="message">
+    <input type="submit" value="Отправить">
+</form>
+
+<!-- здесь будут появляться входящие сообщения -->
+<div id="subscribe"></div>
+
+
+<script>
+    try{
+
+        window.onload = function() {
+
+            if('WebSocket' in window) {
+
+                let ws_url = "ws://127.0.0.1:8081/server.js";
+                /* WebSocket поддерживается. Вы можете писать свой код */
+
+                // создать подключение
+                let socket = new WebSocket(ws_url);
+
+                 // отправить сообщение из формы publish
+                document.forms.publish.onsubmit = function() {
+                    let outgoingMessage = this.message.value;
+
+                    socket.send(outgoingMessage);
+                    return false;
+                };
+
+                // обработчик входящих сообщений
+                socket.onmessage = function(event) {
+                    let incomingMessage = event.data;
+                    showMessage(incomingMessage);
+                };
+
+                // показать сообщение в div#subscribe
+                function showMessage(message) {
+                    let messageElem = document.createElement('div');
+                    messageElem.appendChild(document.createTextNode(message));
+                    document.getElementById('subscribe').appendChild(messageElem);
+                }
+
+            } else {
+                /* WebSockets не поддерживается. Попробуйте использовать старые методы связи */
+                alert('WebSocket не поддерживается');
+            }
+        };
+
+    }catch (e){
+        console.info(e);
+    }
+
+</script>
+</body>
+</html>

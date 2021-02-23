@@ -1,0 +1,31 @@
+{
+  "name": "cockroach_haproxy",
+  "type": "cockroachdb",
+  "host": "localhost",
+  "port": 26000,
+  "username": "max",
+  "password": "roach",
+  "database": "storage",
+  "ssl": {
+    "rejectUnauthorized": false,
+    "ca": "",
+    "key": "",
+    "cert": ""
+  },
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "orm/entities/*.js"
+  ],
+  "migrations": [
+    "migration/**/*.js"
+  ],
+  "subscribers": [
+    "subscriber/**/*.js"
+  ],
+  "cli": {
+    "entitiesDir": "entities",
+    "migrationsDir": "migration",
+    "subscribersDir": "subscriber"
+  }
+}

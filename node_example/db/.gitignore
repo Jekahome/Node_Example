@@ -1,0 +1,9 @@
+
+cockroach/run-http/data
+cockroach/run-https/dir_certs/certs
+cockroach/run-https/dir_certs/my-safe-directory
+cockroach/run-https/dir_certs/node1
+cockroach/run-https/dir_certs/node2
+cockroach/run-https/dir_certs/node3
+cockroach/run-https/dir_certs/node4
+cockroach/run-https/dir_certs/node5

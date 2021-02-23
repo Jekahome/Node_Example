@@ -1,0 +1,341 @@
+<div id="left">
+ <h2 class="display-4" style="margin-bottom: 2em">{{topic.topic.topic}}</h2>
+<!-- { {> (partial_grammar topic.topic.id)}} -->
+    <div class="affix">
+      <blockquote class="blockquote"> {{{topic.topic.translate}}}</blockquote>
+    </div>
+</div>
+<div id="right">
+
+    <form name=MyForm>
+        <div class="form-row">
+            <div class="col-4">
+                <input type="button" class="form-control form-control-lg" value="Reset" onclick="ClearСlock()">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control form-control-lg" name=stopwatch value="00:00:00.00" style="color: chocolate; text-align: center;" >
+            </div>
+            <div class="col">
+                <input type="button" class="form-control form-control-lg"  value="Start" onclick="Start()">
+            </div>
+            <div class="col">
+                <input type="button" class="form-control form-control-lg"  value="Stop" onclick="Stop()">
+            </div>
+        </div>
+    </form>
+    <form>
+        <div class="form-group">
+            <input id="records" class="form-control form-control-sm" type="text" placeholder="" readonly style="color: black">
+        </div>
+    </form></br>
+    <form>
+        {{#each topic.sentences}}
+            <div class="form-group">
+                <h5 for="{{this.id}}" >{{this.translate}}</h5>
+                <textarea name="targetValue" class="form-control form-control-lg" id="{{this.id}}" rows="1" data-en="{{this.sentence}}" data-len="{{help_math_ceil this.sentence this.translate}}" required></textarea>
+                <input  name="helpTargetValue" id="help_{{this.id}}" class="form-control form-control-lg" type="text" placeholder="" readonly style="color: burlywood;">
+            </div>
+        {{else}}
+            Список пуст
+        {{/each}}
+    </form>
+</div>
+
+<div class="modal fade" id="modalValidate" tabindex="-1" role="dialog" aria-labelledby="modalValidateTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalValidateTitle">Error validate LanguageTool!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Fix all linguistic errors
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalEmptyFields" tabindex="-1" role="dialog" aria-labelledby="modalEmptyFieldsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalEmptyFieldsTitle">Error fields!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="time_result" class="modal-body">
+                Fields is not full!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalStop" tabindex="-1" role="dialog" aria-labelledby="modalStopTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalStopTitle">Work's result!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="time_result" class="modal-body stop-content">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+
+    .affix {
+        margin-top: 8em;
+        position: fixed;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        top:0;
+        width: inherit;
+    }
+</style>
+
+
+<script>
+    let g_select_text_translate='';
+
+    function handler(event) {
+        let id = event.currentTarget.id;
+        let sentence = event.currentTarget.dataset.en;
+
+        let lenInput = event.currentTarget.value.length+parseInt(event.currentTarget.dataset.len)+2;
+        //let lenInput = event.currentTarget.value.length
+        document.getElementById('help_'+id).value =  sentence.substring(0,lenInput);
+    }
+
+     function translate(translate_text,tolang){
+
+             return  fetch('/translate',
+                     {
+                          method:'post',
+                          body: JSON.stringify({ text: translate_text,tolang:tolang }),
+                          headers: {"Content-Type": "application/json"},
+                     })
+                     .then(response => response.json())
+                     .catch(function (error) {
+                       console.log('Error:',error)
+                     });
+    }
+
+    function sleep (time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+    }
+
+    window.onload = function() {
+        var textareas = document.querySelectorAll("textarea");
+        textareas.forEach(function (item, i, arr) {
+            item.addEventListener('input', handler, false);
+        }, this);
+
+        document.onselectionchange = function() {
+            g_select_text_translate = document.getSelection().toString();
+        };
+
+        window.document.body.onclick = function(event) {
+            if(g_select_text_translate != ''){
+                let tolang='';
+                if(/[а-я]/gi.test(g_select_text_translate)) {
+                    tolang='en'
+                }else if(/[a-z]/gi.test(g_select_text_translate)){
+                    tolang='ru'
+                }else{
+                    document.getElementById("result_translate").value = 'Select text is not correct!';
+                    g_select_text_translate='';
+                    return false;
+                }
+
+                translate(g_select_text_translate,tolang)
+                .then(data => {
+                    let text = '';
+                    if(data.text) {
+                        text = data.text;
+                        text = text.replace(/(^"|")/g, '')//.replace(/["]/, '');
+                    }
+                    document.getElementById("result_translate").value = text;
+
+                  })
+                 .catch(error => console.error(error));
+                g_select_text_translate='';
+            }
+        };
+
+        load_record(g_topic_id);
+    }
+
+    let g_topic_id="{{topic.topic.id}}";
+
+    function compareNumeric(a,b) {
+        return a - b;
+        // return a > b ? 1:a < b?-1:0;
+    }
+    function mapToJson(map) {
+        return JSON.stringify([...map]);
+    }
+    function jsonToMap(jsonStr) {
+        return new Map(JSON.parse(jsonStr));
+    }
+    function load_record(topic_id) {
+        let topic_times =  jsonToMap(localStorage.getItem('record_time'));
+        let times = topic_times.get(topic_id);
+        if(times){
+            document.getElementById("records").value = times.join('m ')+'m ';
+        }
+    }
+    function AllTargetValue() {
+        let fullTargetValue=true;
+        document.getElementsByName("targetValue").forEach(function(item) {
+           if(item.value.length <= 2){
+               fullTargetValue=false;
+           }
+        });
+        if(fullTargetValue==false){
+             $("#modalEmptyFields").modal({});
+        }
+        return fullTargetValue;
+    }
+    function cleanTargetValue() {
+        document.getElementsByName("targetValue").forEach(function(item) {
+            item.value = "";
+        });
+        document.getElementsByName("helpTargetValue").forEach(function(item) {
+            item.value = "";
+        });
+    }
+    function AllValidate() {
+        if(document.getElementsByClassName("lt-toolbar__status-icon-has-errors").length > 0  ||
+                document.getElementsByClassName("lt-toolbar__status-icon-has-2-errors").length > 0) {
+           $("#modalValidate").modal({});
+            return false;
+        }
+        else return true;
+    }
+    function setRecord(topic_id,time) {
+        // проверить все заполненные поля с валидацией
+        if(time < 1)return false;
+        if(AllTargetValue() == false) return false;
+        if(AllValidate() == false) return false;
+
+        let topic_times =  jsonToMap(localStorage.getItem('record_time'))
+
+        let times = topic_times.get(topic_id);
+        if(times){
+            times.push(time);
+            times.sort(compareNumeric);
+            if( times.length >=9) times.length = 10;
+            topic_times.set(topic_id, times );
+        }else{
+            topic_times.set(topic_id,[time]);
+        }
+        window.localStorage.setItem("record_time",mapToJson(topic_times));
+        return true;
+    }
+
+        //объявляем переменные
+        var base = 60;
+        var clocktimer,dateObj,dh,dm,ds,ms;
+        var readout='';
+        var h=1,m=1,tm=1,s=0,ts=0,ms=0;
+        let g_timer_start=null;
+        let g_start=false;
+
+        //функция для очистки поля
+        function ClearСlock() {
+            cleanTargetValue();
+            clearTimeout(clocktimer);
+            h=1;m=1;tm=1;s=0;ts=0;ms=0;
+            readout='00:00:00.00';
+            document.MyForm.stopwatch.value=readout;
+            dateObj=null;clocktimer=null;dh=null;dm=null;ds=null;ms=null;
+            g_timer_start=null;
+            g_start=false;
+        }
+
+        //функция для старта секундомера
+        function StartTIME() {
+            var cdateObj = new Date();
+            var t = (cdateObj.getTime() - dateObj.getTime())-(s*1000);
+            if (t>999) { s++; }
+            if (s>=(m*base)) {
+                ts=0;
+                m++;
+            } else {
+                ts=parseInt((ms/100)+s);
+                if(ts>=base) { ts=ts-((m-1)*base); }
+            }
+            if (m>(h*base)) {
+                tm=1;
+                h++;
+            } else {
+                tm=parseInt((ms/100)+m);
+                if(tm>=base) { tm=tm-((h-1)*base); }
+            }
+            ms = Math.round(t/10);
+            if (ms>99) {ms=0;}
+            if (ms==0) {ms='00';}
+            if (ms>0&&ms<=9) { ms = '0'+ms; }
+            if (ts>0) { ds = ts; if (ts<10) { ds = '0'+ts; }} else { ds = '00'; }
+            dm=tm-1;
+            if (dm>0) { if (dm<10) { dm = '0'+dm; }} else { dm = '00'; }
+            dh=h-1;
+            if (dh>0) { if (dh<10) { dh = '0'+dh; }} else { dh = '00'; }
+            readout = dh + ':' + dm + ':' + ds + '.' + ms;
+            document.MyForm.stopwatch.value = readout;
+            clocktimer = setTimeout("StartTIME()",1);
+        }
+
+        function Start() {
+            if(g_start==false){
+                cleanTargetValue();
+                ClearСlock();
+                g_start=true;
+                dateObj = new Date();
+                StartTIME();
+                g_timer_start = new Date().getTime();
+            }
+        }
+
+        function Stop() {
+            if(g_start==true){
+                let work_time = Math.round((new Date().getTime() - g_timer_start)/(1000*60));
+                if (setRecord(g_topic_id , work_time  ) ) {
+                    g_start=false;
+                    clearTimeout(clocktimer);
+                    g_timer_start=null;
+                    dateObj=null;
+                    //document.getElementById("time_result").innerText = work_time+" m";
+                    $("#modalStop").find('.stop-content').html(work_time+" m");
+                    $("#modalStop").modal({});
+                    document.MyForm.stopwatch.value='00:00:00.00';
+                    load_record(g_topic_id);
+                }
+            }
+        }
+
+</script>
+
+<style type="text/css">
+    * { margin: 0; padding: 0; }
+    p { padding: 10px; }
+    #left{width:40%; overflow:auto;float:left; padding-left:10px;  }
+    #right{width:59%; overflow:auto; float:left; padding-left:10px; }
+</style>

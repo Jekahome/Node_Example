@@ -1,0 +1,567 @@
+1	1	She's.	Она есть
+2	1	They're.	Они есть
+3	1	It's not. It isn't.	Оно не есть
+4	1	That's.	То есть
+5	1	I'm not.	Я не есть
+6	1	You're not. You aren't.	Вы не есть
+7	1	The weather is nice today.	Сегодня хорошая погода
+8	1	I'm not rich.	Я не богатый
+9	1	This bag is heavy.	Эта сумка тяжелая
+10	1	These bags are heavy.	Эти сумки тяжелые
+11	1	Look! This is Helen.	Смотри! Это Елена
+12	1	My brother and I are good tennis players.	Мой брат и я хорошо играем в теннис
+13	1	Emily is at home. Her children are at school.	Эмили нет дома. Ее дети в школе
+14	1	I'm taxi driver. My sister is a nurse.	Я водитель такси. Моя сестра медсестра
+15	1	Steve is ill. He's in bed.	Стив болен. Он в кровате
+16	1	I'm not hungry, but i'm thirsty.	Я не голоден, но жаждущий (хочу пить)
+17	1	Mr. Thomas is a very old man. He's 98.	Мистер Томас очень старый мужчина. Ему 98 лет.
+18	1	These chairs aren't beatiful, but they are comfortable.	Эти стулья не красивые, но они комфортные
+19	1	Elena is Russian.	Елена россиянка.
+20	1	She's from Moscow.	Она из Москвы
+21	1	Catherine isn't at home.She is at work.	Катерины нет дома. Она на работе
+22	1	Here is your coat. Oh, thank you very much.	Здесь ваше пальто. Ох, спасибо вам большое
+23	1	My name is ...	Меня зовут ...
+24	1	I'm ... years old.	Мне ... лет
+25	1	I'm Ukrainian. I'm from Kharkiv.	Я Украинец. Я из Харькова
+26	1	I'm student.	Я студент
+27	1	My favorite color is yellow.	Мой любимый цвет желтый
+28	1	My favorite sports are run and workout.	Мой любимые виды спорта бег и воркаут
+29	1	She's thirsty.	Она хочет пить
+30	1	They're hungry.	Они голодные
+31	1	He's strong.	Он сильный
+32	1	She's happy.	Она щасливая
+33	1	He's sad.	Он грустный
+34	1	They're angry.	Они злые
+35	1	It isn't early.	Не рано
+36	1	My hands aren't cold.	Моим рукам не холодно
+37	1	Brazil is the largest country.	Бразилия очень большая страна
+38	1	Diamonds aren't cheap.	Даиманты не дешевые
+39	1	Minsk isn't in Russia.	Минск не в России
+40	1	The windows are open.	Окна открыты
+41	1	Lisa isn't happy.	Лиза не счастливая
+42	1	Kate is a doctor.	Катя доктор
+43	1	The children are asleep.	Дети спят
+44	1	Gary isn't hungry.	Гари не голоден
+45	1	The books aren't on the table.	Книжки не на столе
+46	1	The hotel is near the station.	Отель рядом с остановкой
+47	1	The bus is full.	Автобус полный
+48	2	Where's the camera? In your bag.	Где фотоаппарат? В твоей сумке.
+49	2	Is your car blue? No, it's black.	Твоя машина голубая? Нет, она черная
+50	2	Is Kate from London? No,she's American.	Катя из Лондона? Нет, она американка.
+51	2	Am I right? Yes,you are.	Я прав? Да, ты прав.
+52	2	Where's Amy from?	Откуда Ами?
+53	2	What color is your bag?	Какого цвета твоя сумка?
+54	2	Are you hungry? No, I'm not.	Вы голодны? Нет, я не голодный.
+55	2	How is George? Very well.	Как поживает Георг? Очень хорошо.
+56	2	Who's that woman? My sister.	Кто эта женщина? Моя сестра.
+57	2	Are your parents at home?	Твои родители дома?
+58	2	How is your mother?	Как поживает твоя мама?
+59	2	Is your job interesting?	Твоя работа интересная?
+60	2	Are these seats free?	Эти места свободны?
+61	2	Where are you from?	От куда ты?
+62	2	Are you a student?	Ты студент?
+63	2	Is the station near here?	Остановка рядом здесь?
+64	2	Are your children at shcool?	Твои дети в школе?
+65	2	Why are you sad?	Почему ты грустный?
+66	2	How are your parents? They're fine, thank you.	Как поживают твои родители? Они впорядке, спасибо.
+67	2	Where is the bus stop? At the end of the street.	Где остановка автобуса?В конце улицы.
+68	2	How old are your children?	Сколько лет твои детям?
+69	2	How much are the time? 6 o'clock.	Сколько сейчас времени? Шесть часов
+70	2	What is your favorite sport?	Какой твой любимый спорт?
+71	2	Who's the man in this photo? That's my father.	Кто этот мужчина на фото? Это мой отец.
+72	2	What color are your new shoes?	Какого цвета твои новые туфли?
+73	2	What's yuor name?	Какое твое имя?
+74	2	Are you from American? No, I'm Australian.	Ты из Америки? Нет , я австралиец
+75	2	How old are you? I'm 30 years old.	Сколько тебе лет? Мне 30
+76	2	Are you a teacher? No, I'm a lawyer.	Вы учитель? Нет, я юрист
+77	2	What are your favorite sport? Rugby.	Какой твой любимый спорт? Регби.
+78	2	Are your wife a lawyer? No, she's a designer.	Твоя жена юрист? Нет, она дизайнер
+79	2	Where is she from? She's Italian.	От куда она родом? Она итальянка
+80	2	What is her name? Anna.	Как ее имя? Анна
+81	2	How old is she? She's 27.	Сколько ей лет? Ей 27
+82	2	Are you American? No,I'm not.	Вы американец? Нет
+83	2	Are you thirsty? Yes, I'm.	Вы жаждущий? Да
+84	2	Is your father at work? No, he's at home.	Ваш отец на работе? Нет, он дома
+85	2	Are your hand could? No,they aren't cold.	Твоим рукам холодно? Нет, им не холодно
+86	2	Is it Monday today? Yes, it's.	Сегодня понедельник? Да
+87	2	Are you a teacher? No,I'm not.	Вы преподаватель? нет
+88	2	Are you English?	Вы англичанин?
+89	2	Is your brother at home?	Твой брат дома?
+90	2	Where are Marina and Tom?	Где Марина и Том?
+91	2	How old are you?	Сколько тебе лет?
+92	2	What is your name?	Как тебя зовут?
+93	2	Where is Ben from?	Откуда Бен родом?
+94	2	Where is my phone?	Где мой телефон?
+95	2	What color are your eyes?	Какого цвета твои глаза?
+96	2	Who is that boy?	Кто этот мальчик?
+97	2	Why are you here?	Почему ты здесь?
+98	2	Are you hungry? No,but I'm thirsty.	Вы голодны? Нет, но я жаждущий
+99	2	How are your parents? They're fine.	Как дела у твоих родителей? Они впорядке
+100	2	Is Anna at home? No, she's at work.	Анна дома? Нет, она на работе
+101	2	Where're my keys? They are on the table.	Где мои ключи? Они на столе
+102	2	Where is Paul from? Is he American or British.	Откуда родом Паул? Он американец или британец
+103	2	It is very hot today? The temperature is 38 degrees.	Сегодня очень жарко? Температура 38 градусов.
+104	2	Are you a teacher? No, I'm a student.	Вы учитель? Нет, я студент
+105	2	What color is your umbrella? Green.	Какого цвета ваш зонт? Зеленого
+106	2	Where's your car? Is it in the car park?	Где ваша машина? Она на стоянке?
+107	2	Are you tired? No,I'm fine.	Вы устали? Нет, я впорядке
+108	2	These shoes are nice. How much are they?	Эти туфли хороши. Сколько они стоят?
+109	3	He's hot.	Он нагрелся
+110	3	They are tired.	Они устали
+111	3	He is scared.	Он напуган
+112	3	The shop is closed.	Этот магазин закрыт
+113	3	They are asleep.	Они спят
+114	3	The bus is late.	Автобус опоздал
+115	3	She is in a hurry.	Она спешит
+116	3	They are cold.	Они замерзли
+117	3	Are you cold? No, I'm Ok.	Вы замерзли? Нет
+118	3	How is you grandfather?He's very well.	Как ваш дедушка? Он впорядке
+119	3	Are the children in bad? Yes, they are asleep.	Дети в кровате? Да, они спят
+120	3	The weather is nice today. It's hot and sunny.	Хорошая погода сегодня. Тепло и солнечно
+121	3	Andy's favorite sport is tenis. He is very interested in it.	Анди любит играть в тенис
+122	3	These flowers are nice. How much are they?	Эти цветы хороши. Сколько они стоят?
+123	3	Sorry i'm late, That's Ok.	Извините я опоздал. Хорошо
+124	3	How is Lisa? Is she very well?	Как поживает Лиза? Она очень хорошо себя чувствует?
+125	3	Are you interested in art? Yes. I'm. Very well.	Вы заинтересованы в искусстве? Да, я очень заинтересован
+126	3	This coat is expensive. It is three hundred.	Это пальто дорогое. Оно стоит 3 тысячи
+127	3	It's 9.00 and John isn't here! Why is he always late?	Сейчас 9 и Джона здесь нет! Почему он всегда опаздывает?
+128	3	I'm not scared of snakes.	Я не боюсь(напуган) змей
+129	3	I'm tired.	Я устал
+130	3	I'm not hurry.	Я не тороплюсь
+131	3	I'm scred of dogs.	Я боюсь собак
+132	3	I'm very well.	Я впорядке
+133	3	I'm not interested in history.	Я не интересуюсь историей
+134	3	I'm not married.	Я не женат
+135	3	It is dark in my room.	В моей конмате темно
+136	3	Anna is not married.	Анна не жената
+137	3	I'm not interested in music.	Я не интересуюсь музыкой
+138	3	My son is scared of cats.	Мой сын боится кошек
+139	3	It is very cold today.	Сегодня очень холодно
+140	3	How much is this hat?	Сколько стоит эта шляпа?
+141	3	I'm not well.	Я не впорядке ( Мне не хорошо)
+142	3	Are you tired?	Вы устали?
+143	4	She's eating an apple.	Она есть яблоко
+144	4	He's waiting for a bus.	Он ждет автобус
+145	4	They're playing football.	Они играют в футбол
+146	4	He's lying on the floor.	Он лежит на полу
+147	4	They're waitting breakfast.	Они ждут завтрак
+148	4	Please be quite. I'm working.	Пожалуйста, соблюдайте тишину. Я работаю
+149	4	Where's John? He's in the kitchen. He's cooking.	Где Джон? Он на кухне. Он готовит
+150	4	You're standing on my foot. Oh, I'm sorry.	Вы стоите на моей ноге. Ох, я прошу прощения.
+151	4	Look! Somebody is swimming in the river.	Смотри. Кто-то плывет по речке
+152	4	We're here on holiday. We are staying at the Central Hotel.	Мы здесь в отпуске. Мы находимся в Central Hotel
+153	4	Where's Sue? She is having a shower.	Где Сью? Она принимает душ
+154	4	They are building a new hotel in the city center at the moment.	Сейчас строят новый отель в центре города
+155	4	I'm going now. Goodbay.	Я иду сейчас. Прощай
+156	4	Jane's not having dinner.	Джейн не обедает
+157	4	She's watching TV.	Она смотрит телевизор
+158	4	She's sitting on the floor.	Она сидит на полу
+159	4	She's not reading a book.	Она не читает книгу
+160	4	Jane isn't paying the piano.	Джейн не играет на пианино
+161	4	She's laughing.	Она смеется
+162	4	She's wearing a hat.	Она носит шляпу
+163	4	Jane's not drinking coffee.	Джеин не пьет кофе
+164	4	I'm not washing my hair.	Я не мою волосы
+165	4	I'm not reading a newspaper.	Я не читаю газету
+166	4	I'm sitting on a chair.	Я сижу на стуле
+167	4	I'm not eatting.	Я не ем(сейчас)
+168	4	I'm wearing shoes.	Я ношу обувь
+169	4	I'm learning English.	Я изучаю английский
+170	4	I'm not listening to music.	Я не слушаю музыку
+171	4	It's not snowing.	Не идет снег
+172	4	The sun isn't shining.	Солнце не светит
+173	4	It's raining.	Идет дождь
+174	4	Look! Ben is dancing with Sandra.	Смотри! Бен танцует с Сандрой
+175	4	Where are Anna and Lara? - They are watching TV.	Где Анна и Лара? Они смотрят телевизор
+176	4	Hurry up! The train is coming.	Поторопись! Поезд прибывает
+177	4	Sasha is wearing a green dress.	Саша в зеленом платье (надето)
+178	4	Where is Tom? He is cooking dinner.	Где Том? Он готовит обед
+179	4	Kevin is not working today. He is ill.	Кевин не работает сегодня. Он болен
+180	4	We are having lunch. Are you hungry?	Мы ужинаем. Вы голодны?
+181	4	The weather is bad. It is raining.	Погода плохая. Идет дождь
+182	5	Are you watching it?	Вы смотрите это?
+183	5	Are you going now?	Вы сейчас уходить?
+184	5	Is it raining?	Идет дождь?
+185	5	Are you enjoying the film?	Тебе нравится фильм?
+186	5	Is that clock working?	Эти часы работают?
+187	5	Are you waiting for a bus?	Вы ждете автобус?
+188	5	What are you reading?	Что вы читаете?
+189	5	Where is she going?	Куда она идет?
+190	5	What are you eating?	Что вы едите?
+191	5	Why are you crying?	Почему вы плачете?
+192	5	What are they looking at?	На что они смотрят?
+193	5	Why is he laughing?	Почему он смеется?
+194	5	Is Ben working today?	Бен работает сегодня?
+195	5	What are the children doing?	Что делают дети?
+196	5	Are you listening to me?	Ты меня слушаешь?
+197	5	Where are your friends going?	Куда идут твои друзья?
+198	5	Are your parents watching TV?	Твои родители смотрят телевизор?
+199	5	What is Jessica cooking?	Что Джессика готовит?
+200	5	Why are you looking at me?	Почему ты смотришь на меня?
+201	5	Is the bus coming?	Автобус едет?
+202	5	Are you watching Tv? No,I'm not.	Вы смотрите телевизор? Нет не смотрю
+203	5	Are you wearing a watch? No,I'm not.	Вы носите часы? Нет не ношу
+204	5	Are you eating something? Yes, I'm.	Вы едите что-то? Да ем
+205	5	Is it raining? No, It is not.	Идет дождь? Нет не идет
+206	5	Are you sitting on the floor? Yes, I'm.	Ты сидишь на полу? Да сижу
+207	5	Are you feeling well?Yes,I'm well.	Ты себя хорошо чувствуешь? Да я впорядке
+208	5	What are you looking?	Что ты ищещь?
+209	5	Are you dinner?	Ты обедаешь?
+210	5	Is it raining?	Идет дождь?
+211	5	Are you parents working?	Твои родители работают?
+212	5	What is Boris reading?	Что читает Борис?
+213	5	Why is Jesica crying?	Почему Джессика плачет?
+214	5	Where are we going now?	Куда мы идем сейчас?
+215	5	What is Sandra cooking?	Что Сандра готовит?
+216	5	Are you waiting for me?	Вы меня ждете?
+217	5	What are Ben and Tom doing? The are playing in the park.	Что Бен и Том делают? Они играют в парке
+218	5	Where are your parents? They are watching TV.	Где твои родители? Они смотрят телевизор
+219	5	Paula is going out. Where is she going?	Паула выходит? Куда она идет?
+220	5	Where is David? He is having a shower.	Где Девид? Он принимает душ
+221	5	Are the children playing? No, they're asleep.	Дети играют? Нет они спят
+222	5	Is it raining? No, not at the moment.	Идет дождь? Нет, сейчас не идет.
+223	5	Where are Sue and Steve? They are coming now.	Где Сью и Стив? Они сейчас придут
+224	5	Why are you standing here? I am waiting for somebody.	Почему ты стоищь здесь? Я жду кого-то
+225	6	She reads.	Она читает
+226	6	He thinks.	Он думает
+227	6	It flies.	Это летает
+228	6	He dances.	Он танцует
+229	6	She has.	Она есть
+230	6	It finishes.	Заканчивается
+231	6	He plays the piano.	Он играет на пианино
+232	6	They live in a very big house.	Они живут в большом доме
+233	6	She eats a lot of fruit.	Она ест много фруктов
+234	6	He play tennis.	Он играет в теннис
+235	6	We goes to the cinema a lot.	Мы много ходим в кино
+236	6	He sleeps seven hours a night.	Он спит семь часов за ночь
+237	6	Maria speaks four languages.	Мария говорит на четирех языках
+238	6	The shops in the city centre usually open at 9 o'clock in the morning.	Магазины в центре города обычно открываются в 9 часов утра.
+239	6	The City Museum closes at 5 o'clock in the evening.	City Museum закрывается в 5 часов вечера
+240	6	Tina is a teacher. She teaches mathematics to young children.	Тина учитель. Она учит математике маленьких детей
+241	6	My job is very interesting. I meet a lot of people.	Моя работа очень интересная. Я встречаю много людей
+242	6	Peter's car is always dirty. He never not washes it.	Машина Питера всегда грязная. Он никогда не моет
+243	6	Food is expensive. It costs a lot of money.	Еда дорогая. Это стоит много денег.
+244	6	Shoes are expensive. They cost a lot of money.	Обувь дорогая. Они стоят много денег
+245	6	Water boils at 100 degrees Celsius.	Вода кипит при 100 градусах Цельсия.
+246	6	Laura and I are good friends. I like her and she likes me.	Лора и я хорошие друзья. Она мне нравится и она мне нравится
+247	6	Sue always arrives early.	Сью всегда приходит рано
+248	6	I never goes to the cinema.	Я никогда не хожу в кино
+249	6	Martina always works hard.	Мартина всегда много работает
+250	6	Children usually like chocolate.	Дети обычно любят шоколад
+251	6	Jackie always enjoies parties.	Джеки всегда любит вечеринки
+252	6	I often forget people's names.	Я часто забываю имена людей
+253	6	Sam never watches TV.	Сэм никогда не смотрит телевизор
+254	6	We usually have dinner at 7.30.	Мы обычно обедаем в 7.30
+255	6	Kate always wears nice clothes.	Кейт всегда носит красивую одежду
+256	6	I never watch Tv in the evening.	Я никогда не смотрю телевизор вечером
+257	6	I often read in bed.	Я часто читаю в постели
+258	6	I sometimes get up before 7 o'clock.	Я иногда встаю до 7 часов
+259	6	I usually go to work by bus.	Я обычно иду на работу на автобусе
+260	6	I often drink coffee in the morning.	Я часто пью кофе по утрам
+261	6	I live in Moscow.	Я живу в Москве
+262	6	Linda usually get up at 7 o'clock.	Линда обычно встает в 7 часов
+263	6	We sometime go to the park.	Мы когда-нибудь идем в парк
+264	6	My sister loves chocolate.	Моя сестра любит шоколад
+265	6	I never watch TV.	Я никогда не смотрю телевизор
+266	6	My frainds often go to the cinema.	Мои друзья часто ходят в кино
+267	6	I like caviar but it costs a lot of money.	Я люблю икру, но это стоит больших денег
+268	6	Anton speaks English well.	Антон хорошо говорит по-английски
+269	6	I always start work at 9 o'clock.	Я всегда начинаю работу в 9 часов
+270	6	Cats eat fish.	Кошки едят рыбу
+271	7	I do not play the piano very well.	Я не очень хорошо играю на пианино
+272	7	Anna does not play the piano very well.	Анна не очень хорошо играет на пианино
+273	7	They do not know my phone number.	Они не знают мой номер телефона
+274	7	We don't work very hard.	Мы работаем не очень усердно
+275	7	He doesn't have bath very day.	Он не принимает ванну в день
+276	7	You don't do the same thing every day.	Вы не делаете то же самое каждый день
+277	7	Ben and Sophie like classical music.	Бен и Софи любят классическую музыку
+278	7	Kate doesn't like classical music.	Кейт не любит классическую музыку
+279	7	I don't like classical music.	Я не люблю классическую музыку
+280	7	Ben and Sophie don't like boxing.	Бен и Софи не любят бокс
+281	7	Kate likes boxing.	Кейт любит бокс
+282	7	I like boxing and fishing and cars.	Я люблю бокс и рыбалку и машины.
+283	7	Ben and Sophie like horror movies.	Бен и Софи любят фильмы ужасов
+284	7	Kate doesn't like horror movies.	Кейт не любит фильмы ужасов
+285	7	I do not like horror movies.	Я не люблю фильмы ужасов
+286	7	I don't watch TV often. I often watch TV.	Я не часто смотрю телевизор. Я часто смотрю телевизор
+287	7	I never go to the theatre.	Я никогда не хожу в театр
+288	7	I often ride a bike. I never ride a bike/ I do not ride a bike often.	Я часто катаюсь на велосипеде. Я никогда не катаюсь на велосипеде.Я не катаюсь на велосипеде часто
+289	7	I never eat in restaurants. I do not eat in restaurant often.	Я никогда не ем в ресторанах. Я не ем в ресторане часто
+290	7	I often travel by train. I do not travel by train very often.	Я часто путешествую на поезде. Я не езжу на поезде очень часто
+291	7	The weather here is usually nice. It does not rain much.	Погода здесь обычно хорошая. Дождя не много
+292	7	Paul has a car, but he does not use it very often.	У Пола есть машина, но он не пользуется ею очень часто
+293	7	Paul and his friends like films, but they do not go to the cinema very often.	Пол и его друзья любят фильмы, но они не часто ходят в кино
+294	7	Amanda is married, but she does not wear a ring.	Аманда замужем, но она не носит кольца
+295	7	I do not know much about politics. I'm not inteerested in it.	Я не знаю ничего о политике. Я не заинтересован в этом
+296	7	The Regent Hotel isn't expensive. It does not cost much to stay often.	Regent Hotel не дорогой. Это не стоит много, чтобы остаться часто
+297	7	Ed lives very near us, but we do not see him very often.	Эд живет очень близко от нас, но мы не видим его очень часто
+298	7	Margaret speaks four languages - English,French,German and Spanish.	Маргарет говорит на четырех языках - английском, французском, немецком и испанском
+299	7	I like my job. It's very boring.	Я люблю свою работу. Это очень скучно
+300	7	Where is Steve? I'm sorry. I do not know.	Где Стив? Мне жаль. Я не знаю.
+301	7	Sue is very quite person. She doesn't talk very much.	Сью очень спокойный человек. Она не очень много говорит
+302	7	Andy drinks a lot of tea. It's him favorite drink.	Энди пьет много чая. Это его любимый напиток.
+303	7	It is not true. I do not believe it.	Это не правда. Я не верю в это
+304	7	That's a very beautiful picture. I like it very much.	Это очень красивая картина. мне это очень нравится
+305	7	Mark is a vegetarian. He does not eat meat.	Марк вегетарианец. Он не ест мясо
+306	7	I like yoghurt, but i do not like milk.	Я люблю йогурт, но я не люблю молоко
+307	7	We do not watch footbal very often.	Мы не очень часто смотрим футбол
+308	7	My parents do not speak English.	Мои родители не говорят по английски
+309	7	Peter does not work in the evening.	Питер не работает вечером
+310	7	I do not know this man.	Я не знаю этого человека
+311	7	Boris eats meat, but he does not eat fish.	Борис ест мясо, но не ест рыбу
+312	7	My brother does not like his job.	Мой брат не любит свою работу
+313	7	Emma and Anna do not get up early on Sundays.	Эмма и Анна не встают рано по воскресеньям
+314	8	I like chocolate. How about you? Do you like chocolate?	Я люблю шололад. Как насчет тебя? Ты любишь шоколад?
+315	8	I play tennis. How about you? Do you play tennis?	Я играю в теннис. Как насчет тебя? Вы играете в теннис?
+316	8	You live near here? How about Lucy? Does Lucy live near here?	Ты живешь рядом здесь? Как насчет Люси? Люси живет здесь?
+317	8	Tom plays tennis. How about his friends? Do Tom's friends play tennis? or Do his friends play tennis? or Do they play tennis?	Том играет в теннис. Как насчет его друзей? Друзья Тома играют в теннис?
+318	8	You speak English. How about your brother? Does your brother speak English?	Ты разговариваешь по английски. Ка насчет твоего брата. Твой брат разговаривает по английски?
+319	8	I do yoga every morning. How about you? Do you do yoga every morning?	Я занимаюсь йогой каждое утро. Как насчет тебя? Ты занимаешься йогой каждое утро?
+320	8	Sue goes on holiday a lot. How about Paul? Does Paul go on holiday a lot? or Does he go on holiday much?	Сью много ездит в отпуск. Как насчет Пола? Пол много ездит в отпуск?
+321	8	I want to be famous. How about you? Do you want to be famouse?	Я хочу быть известным. Как насчет тебя? Ты хочешь быть известным?
+322	8	You work hard. How about Anna? Does Anna work hard? or Does she work hard?	Ты усердно работаешь. Как насчет Анны? Анна много работает?
+323	8	Where do your parents live?	Где живут твои родители?
+324	8	Do you always early get up?	Ты всегда рано встаешь?
+325	8	How often do you watch TV?	Как часто ты смотришь телевизор?
+326	8	What do you want for dinner?	Что вы хотите на ужин?
+327	8	Do you like footbal?	Тебе нравится футбол?
+328	8	Does your brother like football?	Твой брат любит футбол?
+329	8	What do you in your free time?	Что ты делаешь в свободное время?
+330	8	Where does your sister work?	Где работает твоя сестра?
+331	8	Do you always have breakfast?	Ты всегда завтракаешь?
+332	8	What does this word mean?	Что значит это слово?
+333	8	Does it snow here in winter?	Зимой здесь идет снег?
+334	8	What time do you usually go to bed?	В какое время ты обычно идешь в кровать?
+335	8	How much does it cost in phone New York?	Сколько стоит в телефоне Нью-Йорк?
+336	8	What do you usually have for braekfast?	Что у тебя обычно на завтрак?
+337	8	What do you do? I work in a bookshop.	Чем ты занимаешься? Я работаю в книжном магазине.
+338	8	Do you enjoy it? It's OK.	Вам это нравится? Все нормально.
+339	8	What time do you start in the morning? At 9 o'clock.	Во сколько ты начинаешь утром? В 9 часов
+340	8	Do you work on Saterdays?	Ты работаешь в субботу?
+341	8	How do you go to work? Usually by bus.	Как ты добираешься на работу? Обычно на автобусе.
+342	8	And your husband. What does he do? He's a teacher.	И твой муж. Чем он занимается. Он учитель.
+343	8	What does he teach? Science.	Чему он учит? Науке.
+344	8	Does he enjoy his job? Yes, he loves it.	Ему нравится его работа? Да, он любит ее.
+345	8	Do you watch TV а lot? No, I don't	Вы много смотрите телевизор? Нет
+346	8	Do you live in а big city? Yes,I do	Вы живете в большом городе? Да
+347	8	Do you often ride а bike? No, I don't	Вы часто ездите на велосипеде? Да
+348	8	Does it rain а lot where you live? Yes, it does	Много ли дождя там, где ты живешь? Да
+349	8	Dо you play the piano? No, I don't	Вы играете на пианино? Нет
+350	8	Does you like coffee?	Вы любите кофе?
+351	8	Does Ben speak Russian?	Бен говорит по-русски?
+352	8	Where do you live?	Где ты живешь?
+353	8	Do your parents live on Moscow?	Твои родители живут в Москве?
+354	8	What do you usually eat for dinner?	Что вы обычно едите на ужин?
+355	8	Where does your brother work?	Где работает твой брат?
+356	8	Haw often do you watch films?	Как часто вы смотрите фильмы?
+357	8	Where do you usually go on holiday?	Куда вы обычно ездите в отпуск?
+358	8	Do you always get up early?	Вы всегда встаете рано?
+359	8	How often do you wash your hair?	Как часто вы моете волосы?
+360	8	Do you want to go out tonight?	Вы хотите выйти сегодня вечером?
+361	8	Does Helen live near here?	Елена живет здесь?
+362	8	What time do you usually get up in the morning?	Во сколько ты обычно встаешь утром?
+363	8	What does Jessica do?	Что делает Джессика?
+364	8	Do you live in London?	Ты живешь в Лондоне?
+365	8	Have you got a car?	У тебя есть машина?
+366	8	Do you go out a lot?	Вы много выходите?
+367	8	Have you got a lot of friends?	У тебя много друзей?
+368	8	Do you like London?	Вам нравится Лондон?
+369	8	Do you like dancing?	Вам нравится танцевать?
+370	9	Does he take photographs? Yes,he does.	Он делает фотографии?(вообще) Да
+371	9	Is he taking photograph? No,he is not.	Он делает фотографии?(сейчас) Нет
+372	9	What is he doing? He is having a bath.	Что он делает?(сейчас) Он принимает ванну.
+373	9	Is she driving a bus? No, she is not.	Она ведет автобус?(сейчас) Нет
+374	9	Does she drive a bus? Yes, she does.	Она водит автобус?(вообще) Да
+375	9	What is she doing? She is palying the piano.	Что она делает?(сейчас) Она играет на пианино
+376	9	Does he clean windows? Yes, he does.	Он чистит окна?(вообще) Да
+377	9	Is he cleaning windows? Yes, he is.	Он чистит окна?(сейчас) Да
+378	9	What is he doing? He is cleaning a window.	Что он делает?(сейчас) Он чистит окна
+379	9	Are they teaching? No, they aren't.	Они обучаются?(сейчас) Нет
+380	9	Do they teach? Yes, they do.	Они преподают?(вообще) Да
+381	9	What do they do? They teach.	Чем они занимаются?(вообще) Они учитат
+382	9	Excuse me, do you speak English?	Извините, вы говорите по-английски?
+383	9	Where's Kate? I do not know.	Где Кейт? Я не знаю
+384	9	What's funny? Why are you laughing?	Что смешного? Почему ты смеешься?(сейчас)
+385	9	What does your sister do? She's a dentist.	Что твоя сестра делает?(вообще) Она стоматолог
+386	9	Is it raining? I do not want to go out in the rain.	Идет дождь?(сейчас) Я не хочу выходить под дождь.
+387	9	Where do you come from? Where are you from? Canada.	Откуда ты? Канада
+388	9	How much does it cost to stay at this hotel? Is it expensive?	Сколько стоит остановиться в этом отеле? Это дорого?
+389	9	Steve is a good tennis player, but he does not play very often.	Стив хороший теннисист, но он играет не очень часто
+390	9	Excuse me, do you speak English?	Извините, вы говорите по-английски?
+391	9	Where's Tom? He's having a shower.	Где Том? Он принимает душ
+392	9	I don't watch. I do not watch TV very often.	Я не смотрю. Я не очень часто смотрю телевизор
+393	9	Listen! Somebody is singing.	Слушайте! Кто-то поет.
+394	9	Sarah is tired. She wants to go home now.	Сара устала. Она хочет пойти домой сейчас.
+395	9	How often do you use your car?Every day?	Как часто вы пользуетесь своей машиной? Каждый день?
+396	9	Excuse me,but you are sitting in my seat. Oh, I'm sorry.	Извините, но вы сидите на моем месте. Ой, простите
+397	9	I'm sorry. I do not understand. Can you speak more slowly?	Мне жаль. Не понимаю. Можешь говорить медленнее?
+398	9	It is late. I am going home now. Are you coming with me?	Поздно. Я иду домой сейчас. Ты идешь со мной?
+399	9	What time does your father finish work every day?	Во сколько твой отец заканчивает работу каждый день?
+400	9	You can turn off the radio. I am not listening to it.	Вы можете выключить радио. Я не слушаю это.
+401	9	Where is Paul? In the kitchen. He is cooking sometthing.	Где Пол? На кухне. Он что-то готовит.
+402	9	Mark does not usually drive to work. He ususlly walks.	Марк обычно не ездит на работу. Он обычно ходит
+403	9	Sue does not like coffee. She prefers tea.	Сью не любит кофе. Она предпочитает чай.
+404	9	Anton! Your phone is ringing.	Антон! Твой телефон звонит.
+405	9	I play footbal every Sunday.	Каждое воскресенье я играю в футбол.
+406	9	What is Nina doing? She is cookiing dinner.	Что делает Нина? Она готовит ужин.
+407	9	Hello. Where are you going? I am going home.	Привет. Куда ты идёшь? Я иду домой.
+408	9	Where is Sasha from? Where does Sasha come from?	Откуда Саша?
+409	9	I am not working today.	Сегодня я не работаю.(сейчас)
+410	9	Why are you crying?	Почему ты плачешь?(сейчас)
+411	9	Do you know this/that woman?	Вы знаете эту женщину?
+412	9	I drink/have coffee every morning.	Я пью кофе каждое утром.
+413	9	How often do you go to London?	Как часто ты ездишь в Лондон?
+414	10	They've got two children.	У них есть два ребенка
+415	10	She hasn't got a key.	У нее нет ключа
+416	10	He's got a new job.	У него новая работа
+417	10	Have you got an umbrella?	У тебя есть зонт?
+418	10	We've a lot of work to do.	У нас много работы
+419	10	I haven't got your phone number.	У меня нет твоего номера телефона
+420	10	Has your father got a car?	У твоего отца есть машина?
+421	10	How much money have we got?	Сколько у нас денег?
+422	10	Have you got any money?	У тебя есть деньги?
+423	10	I haven't got many clothes.	У меня не так много одежды.
+424	10	Has Tom got а brother?	У Тома есть брат?
+425	10	How many children have they got?	Сколько у них детей?
+426	10	Have you got any questions?	У вас есть вопросы?
+427	10	Sam hasn't got а job.	Сэм не получил работу.
+428	10	Have you got а саг? No. He hasn't got a car.	У тебя есть машина? Нет. У него нет машины.
+429	10	Have you got а blke? Yes. He's got a bike.	У тебя есть велосипел? Да. У него есть велосипед.
+430	10	Have you got а dog? No. He hasn't got a dog. (He doesn't has a dog.)	У тебя есть собака? Нет. У него нет собаки.
+431	10	Have you got а mobile phone? Yes. He's got a mobile phone. (He has a mobile phone.)	У тебя есть мобильный телефон. Да. У него есть мобильный телефон.
+432	10	Have you got а watch? No. He hasn't got a watch. (He doesn't has a watch.)	У тебя есть часы. Нет. У него нет часов.
+433	10	Have you got any brothers or sister? Yes, two brothers and a sister. He's got two brothers and a sister. (He has two ....)	У тебя есть братья или сестры?Да, два брата и сестра. У него есть два брата и сестра.
+434	10	I haven't got a dog. (I do not have a dog.)	У меня нет собаки.
+435	10	I've got a bike. (I have a bike.)	У меня есть велосипед (мотоцикл).
+436	10	I've got a sister. (I have a sister.)	У меня есть сестра.
+437	10	Sara hasn't got a car. She goes everywhere by bike. (Sara doesn't have a car.)	У Сары нет машины. Она везде ездит на велосипеде.
+438	10	They like animals. They've got three dogs and two cats. (They have three ...)	Они любят животных. У них три собаки и две кошки.
+439	10	Charles isn't happy. He's got a lot of problem. (He has a lot...)	Чарльз не счастлив. У него много проблем.
+440	10	They are always busy. They haven't got much free time. (They don't have much...)	Они всегда заняты. У них мало свободного времени.
+441	10	What's wrong? I've got something in my eye. (I have something ...)	В чем дело? У меня что-то есть в глазу.
+442	10	Where's my pen? I don't know. I've got it. (I don't have it.)	Где моя ручка? Я не знаю. У меня нет ее.
+443	10	Amy wants to go the concert, but she hasn't a ticket. (but she doesn't have a ticket.)	Эми хочет пойти на концерт, но у нее нет билета.
+444	10	I'm not feeling very well. I've got a headache. (I have a headache.)	Я не очень хорошо себя чувствую. У меня болит голова.
+445	10	Everybody like Tom. He's got a lot of friends. (He has a lot of friends.)	Всем нравится Том. У него много друзей.
+446	10	She can't open the door. She hasn't got a key. (She doesn't have a key.)	Она не может открыть дверь. У нее нет ключа.
+447	10	Quick! We haven't got much time. (We don't much time.)	Быстрый! У нас мало времени.
+448	10	An insect has got six legs. (An insect has six legs.)	У насекомого шесть ног.
+449	10	I'm unemploed. I haven't got a job. (I do not have a job.)	Я безработный. У меня нет работы.
+450	10	I've got big family. (I have big family.)	У меня большая семья.
+451	10	Have you got headache? (Do you have headache?)	У тебя болит голова?
+452	10	I haven't got a mobile phone. (I don't have a mobile phone.)	У меня нет телефона.
+453	10	Anna has got cat and dog. (Anna has cat and dog.)	У Анны есть кошка и собака.
+454	10	Tom has got green eyes. (Tom has green eyes.)	У Тома зеленые глаза.
+455	10	Have you got a bike? (Do you have a bike?)	У тебя есть велосипед?
+456	10	Have you got  house or apartment? (Do you have house or apartment?)	У вас есть дом или квартира?
+457	10	My friends have got new a car. (My friends have new a car.)	У моих друзей есть новая машина.
+458	11	Joe was in bed.	Джо был в кровати.
+459	11	Jack and Kate were in/at the cinema.	Джек и Кейт были в кинотеатре.
+460	11	Sue was at the station.	Сью была на вокзале.
+461	11	Mr. and Mrs. were in/at a restaurant.	Мистер и миссис были в ресторане.
+462	11	Ben was on/at the beach / on a beach/ at the seaside.	Бен был на пляже
+463	11	And you? I was at home.	А вы? Я был дома.
+464	11	Last year she was 22, so she is 23 now.	В прошлом году ей было 22 года, поэтому ей сейчас 23 года.
+465	11	Today the weater is nice, but yesterday it was very cold.	Сегодня погонщик хороший, а вчера было очень холодно.
+466	11	I'm hungry. Can I have something to eat?	Я хочу есть. Могу ли я что либо поесть?
+467	11	I feel fine this morning, but I was very tired last night.	Я чувствую себя хорошо этим утром, но я очень устал прошлой ночью.
+468	11	Where were you at 11 o'clock last Friday morning?	Где вы были в 11 часов утра прошлой пятницы?
+469	11	Don't buy those shoes. They are very expensive.	Не покупай эту обувь. Они очень дорогие.
+470	11	I like your new jacket.Was it exponsive?	Мне нравится ваш новый пиджак. Был ли он дорогим?
+471	11	This time last year I was in Paris.	На этот раз в прошлом году я был в Париже.
+472	11	Where are Sam and Joe? I don't know. They were here a few minutes ago.	Где Сэм и Джо? Я не знаю. Они были здесь несколько минут назад.
+473	11	We weren't happy with the hotel. Our room was very small and it wasn't clean.	Мы не были довольны отелем. Наш номер был очень маленьким, и он не был чистым.
+474	11	Mark wasn't at work last week because he was ill. He's better now.	На прошлой неделе Марка не было на работе, потому что он был болен. Теперь ему лучше.
+475	11	Yesterday was a public holiday, so the banks were closed. They're apen today.	Вчера был выходной, поэтому банки были закрыты. Они сегодня открыты.
+476	11	Were Kate and Ben at the party? Kate was there, but Ben wasn't.	Кейт и Бен были на вечеринке? Кейт была там, но Бен не был.
+477	11	Where are my keys? They were on the table, but the're not there now.	Где мои ключи? Они были на столе, но сейчас их там нет.
+478	11	You weren't at home last night. Where were you?	Тебя не было дома прошлой ночью. Где вы были?
+479	11	Why were you late this morning? The traffic was bad.	Почему ты опоздал этим утром? Движение было плохим.
+480	11	Was your exam difficult? No, it was easy.	Твой экзамен был трудным? Нет, это было легко.
+481	11	Where were Sue and Chris last week? They were on holiday.	Где были Сью и Крис на прошлой неделе? Они были в отпуске
+482	11	How much was your new camera? A hundred pounds.	Сколько стоила ваша новая камера? Сто фунтов
+483	11	Why were you angre yesterday? Because you were late.	Почему ты вчера был в ярости? Потому что ты опоздал.
+484	11	Was the weather nice last week? Yes, it was beautiful.	На прошлой неделе была хорошая погода? Да, это было красиво.
+485	11	I was at cinema last week. (Last week I was at cinema.)	На прошлой неделя я была в кинотеатре.
+486	11	Was Irina in the office this morning	Ирина была в офисе сегодня утром?
+487	11	Where were Anna and Liz at the party.	Анна и Лиз были на вечеринке?
+488	11	The exam wasn't difficult	Экзамен не был сложным.
+489	11	How much was your new bag?	Сколько стоила твоя новая сумка?
+490	11	The weather was cold but sunny	Погода была холодной, но солнечной.
+491	11	My parents wereabroad last sammer. 	Прошлым летом мои родители были заграницей.
+492	11	Where were you yesterday evening? (last night?)	Где вы были вчера вечером?
+493	12	We were tall.	Мы были высокие!
+494	12	We were not tall.	Мы не были высокие!
+495	12	Were we tall?	Мы были высокие?
+496	12	He was tall.	Он был высокий!
+497	12	He was not tall.	Он не был высоким!
+498	12	Was he tall?	Он был высокий?
+499	12	We played football.	Мы играли в футбол!
+500	12	We did not play football.	Мы не играли в футбол!
+501	12	Did we play football.	Мы играли в футбол?
+502	12	He has a dog.	У него есть собака.
+503	12	He had a dog.	У него была собака
+504	12	He didn't have a dog.	У него не было собаки.
+505	12	I cleaned my teeth three times yesterday.	Я чистил зубы три раза вчера
+506	12	It was hot in the room, so I opened the window.	В комнате было жарко, поэтому я открыл окно.
+507	12	The film was very long. It started at 7.15 and finished at 10 o'clock.	Фильм был очень длинный. Это началось в 7.15 и закончилось в 10 часов.
+508	12	When I was a child, I wanted to be a doctor.	Когда я был ребенком, я хотел стать врачом.
+509	12	The accident happened last Sunday afternoon.	Инцидент произошел в полдень прошлого воскресенья.
+510	12	The weather is nice today, but yesterday it rained all day.	Сегодня хорошая погода, а вчера весь день шел дождь.
+511	12	We enjoyed our holiday last year. We stayed at a very nice place.	Мы наслаждались нашим праздником в прошлом году. Мы остались в очень хорошем месте.
+512	12	Anna's grandfather died when he was 90 years old.	Дедушка Анны умер, когда ему было 90 лет.
+513	12	got	get
+514	12	saw	see
+515	12	played	play
+516	12	paid	pay
+517	12	visited	visit
+518	12	bought	buy
+519	12	went	go
+520	12	thought	think
+521	12	copied	copy
+522	12	knew	know
+523	12	put	put
+524	12	spoke	speak
+525	12	Last Tuesday Lisa flew from London to Madrid. She got up at 6 o'clock in the morning and had a cup of coffee. At 6.30 she left home and drove to the airport. 	В прошлый вторник Лиза вылетела из Лондона в Мадрид. Она встала в 6 часов утра и выпила чашку кофе. В 6.30 она вышла из дома и поехала в аэродром.
+526	12	When she got there, she parked the car, walked to the airport biulding, and checked in. Then she had breakfast at a cafe and waited for her flight. 	Добравшись до нео, она припарковала машину, пошла к зданию аэропорта и зарегистрировалась. Затем она позавтракала в кафе и стала ждать своего рейса.
+527	12	The plane departed on time and arrived in Madrid two hours later. Finally, she took a taxi from the airport to her hotel in the center of Madrid.	Самолет отправился вовремя и через два часа прибыл в Мадрид. Наконец она взяла такси из аэропорта до своего отеля в центре Мадрида.
+528	12	James always goes to work by car. Yesterday he went to work by car.	Джеймс всегда ездит на работу на машине. Вчера он ездил на работу на машине.
+529	12	Rachel often loses her keys. She lost her keys last week.	Рейчел часто теряет ключи. Она потеряла ключи на прошлой неделе.
+530	12	Kate meets her friends every evening. She met her friends yesterday evening.	Кейт встречается со своими друзьями каждый вечер. Она встретила своих друзей вчера вечером.
+531	12	I buy а newspaper every day. Yesterday I bought a newspaper.	Я покупаю газету каждый день. Вчера я купил газету.
+532	12	We often go to the cinema at vveekends. Last Sunday we went to the cinema.	Мы часто ходим в кино на вечеринки. В прошлое воскресенье мы ходили в кино
+533	12	I еаt an orange every day. Yesterday I ate an orange.	Я ем апельсин каждый день. Вчера я ел апельсин.
+534	12	Tom always has а shower in the morning. Тhis morning he had a shower.	Том всегда принимает душ по утрам. В это утро он принял душ.
+535	12	Our friends often come to see us. They came last Friday.	Наши друзья часто приходят к нам. Они пришли в прошлую пятницу.
+536	12	I went to the theater.	Я ходил в театр.
+537	12	I met some friends at lunchtime.	Я встретил некоторых друзей в обеденный перерыв.
+538	12	I went to the supermarket.	Я пошел в супермаркет.
+539	12	I phoned а lot of people.	Я позвонил многим людям.
+540	12	I lose my keys.	Я теряю свои ключи.
+541	12	I worked all day yesterday.	Вчера я работал весь день.
+542	12	I started work at 9 o'clock and finished at 7.	Я начал работать в 9:00, а закончил в 7:00
+543	12	Sasha went to Paris last year.	В прошлом году Саша ездила в Париж
+544	12	We played tennis yesrerday evening.	Вчера вечером мы играли в теннис.
+545	12	Му friends visited me last week.	На прошлой неделе меня навестили мои друзья.
+546	12	Over the weekend I read a very interesting book.	На выходных я прочитала очень интересную книгу.
+547	12	Boris bought a motorbike when he was 17 years old.	Борис купил мотоцикл, когда ему было 17 лет
+548	12	I got up early and  had а shower.	Я рано встал и принял душ.
+549	12	Тоm was tired last night, so he went to bed early.	Прошлой ночью Том устал, поэтому он рано лег спать.
+550	12	I found this key on the floor.  Is that yours?	Я нашел этот ключ на полу. Это твое?
+551	12	Kate got married when she was 23.	Кейт вышла замуж, когда ей было 23 года.
+552	12	Helen is learning to drive. She had her first lesson yesterday.	Елена учится водить. У нее был ее первый урок вчера.
+553	12	I've got a new job. Yes, I know. David told me.	У меня новая работа. Да, я знаю. Дэвид сказал мне.
+554	12	Where did you buy that book? It was a present. Amy gave it to me.	Где вы купили эту книгу? Это был подарок. Эми дала его мне.
+555	12	We were hungry, so we had something to eat.	Мы были голодны, поэтому у нас было достаточно еды.
+556	12	Did you enjoy the film? Yes, I thought it was very good.	Вам понравился фильм? Да, я думал, что это было очень хорошо.
+557	12	Did Andy соmе to your party? No, we invited him, but he didn't come.	Энди пришел на твою вечеринку? Нет, мы пригласили его, но он не пришел.
+558	12	It was a good party. I enjoyed it.	Это была хорошая вечеринка. Мне это понравилось.
+559	12	Did you do the shopping? No, I didn't have time.	Вы делали покупки? Нет, у меня не было времени.
+560	12	Did you phone Adam? No, I'm afraid I forgot.	Ты звонил Адаму? Нет боюсь я забыл.
+561	12	I like your new watch. Where did you get it?	Мне нравятся твои новые часы. Откуда это у вас?
+562	12	I saw Lucy at the party, but I didn't speak to her.	Я видел Люси на вечеринке, но я не разговаривал с ней.
+563	12	Did you have a nice weekend? Yes, I went to stay with some friends.	У вас были хорошие выходные? Да, я пошел, чтобы остаться с друзьями.
+564	12	Paul wasn't well yesterday, so he didn't go to work.	Полу было плохо вчера, поэтому он не пошел на работу.
+565	12	Is Mary here? Yes, she arrived five minutes ago.	Мэри здесь? Да, она прибыла пять минут назад.
+566	12	Where did Robert live before he moved here?	Где жил Роберт, прежде чем он переехал сюда?
+567	12	The restaurant wasn't expensive. The meal didn't cost very much.	Ресторан не был дорогим. Еда не стоила очень дорого.

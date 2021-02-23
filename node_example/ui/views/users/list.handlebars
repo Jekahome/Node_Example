@@ -1,0 +1,34 @@
+{{#section 'head'}}
+    <meta name="robots" content="noindex">
+{{/section}}
+
+    <h1 class="title">All users</h1>
+    <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>PASSWORD</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.password}}</td>
+        </tr>
+        {{else}}
+            <tr>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+                <td>---</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+

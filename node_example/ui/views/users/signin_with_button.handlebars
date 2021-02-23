@@ -1,0 +1,164 @@
+
+
+<script>
+
+    // Авто-проверка пользователя
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '427525085164***',
+            xfbml      : true,
+            version    : 'v9.0'
+        });
+        FB.AppEvents.logPageView();
+        FB.getLoginStatus(function(response) {
+            statusChangeCallback(response);
+        });
+    };
+
+    function statusChangeCallback(response){
+
+        console.log("response=",response); // Текущий статус входа человека.
+        if (response.status === 'connected') {
+            // Авторизовался на своей веб-странице и в Facebook.
+            // предоставьте ему возможность работать с приложением как зарегистрированному пользователю.
+            $('#login_block').hide();
+            document.getElementById('status').innerHTML = "";
+
+            var uid = response.authResponse.userID;
+            var expiresIn = response.authResponse.expiresIn;
+            var accessToken = response.authResponse.accessToken;
+            console.log("uid:%s,accessToken:%s",uid,accessToken);
+
+            console.log('Successful login for: %s, userID=%s. Срок действия маркера истечет в %s' ,
+                    response.name,
+                    uid,
+                    new Date( new Date().getTime()+ expiresIn ).toLocaleString() );
+
+            $('#fb_custom_login').hide();
+
+           testAPI();
+        } else {
+            // Вы не авторизовались на вашей веб-странице
+            // предложите ему диалог «Вход» с элементом FB.login() или покажите кнопку «Вход»
+
+            $('#login_block').show();
+            document.getElementById('status').innerHTML = "Вы не авторизованны.";
+
+            $('#fb_custom_logout').hide();
+        }
+    }
+
+    // Тестирование Graph API после входа в систему.
+    // См. StatusChangeCallback (), чтобы узнать, когда выполняется этот вызов.
+    function testAPI() {
+        console.log('Welcome!  Fetching your information.... ');
+        FB.api('/me?fields=name,email,picture,first_name,last_name', function(response) {
+
+            console.log('Successful login for: %s' , response.name);
+            // Регистрация пользователя
+            document.getElementById('status').innerHTML = "Спасибо за вход, " + response.name + '!';
+        });
+    }
+
+    // Загрузка Facebook SDK.js
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        js.onload= function(){
+
+        };
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Или так загрузить Facebook SDK.js
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+
+<!-- А. Вход с помощью кнопки "Вход"
+При авторизации кнока изменится на Выход
+-->
+
+<!-- Показать кнопку FACEBOOK LOGIN -->
+<!-- <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="false"></div>-->
+<!-- или так показать кнопку
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> -->
+
+
+<!-- Б. Вход с помощью диалога входа из SDK для JavaScript
+Чтобы использовать собственную кнопку, вызывайте диалог входа-->
+
+<div class="buttons">
+    <button id="fb_custom_login" class="button is-primary">FACEBOOK LOGIN</button>
+    <button id="fb_custom_logout" class="button is-primary">FACEBOOK LOGOUT</button>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#fb_custom_login").on("click",function(){
+            FB.login(function(response) {
+                if (response.status === 'connected') {
+                    // Logged into your webpage and Facebook.
+                    $('#fb_custom_login').hide();
+                    $('#fb_custom_logout').show();
+
+                   var uid = response.authResponse.userID;
+                   var accessToken = response.authResponse.accessToken;
+                   console.log("uid:%s,accessToken:%s",uid,accessToken);
+
+                    FB.api('/me?fields=name,email,picture,first_name,last_name', function(response) {
+                        // Регистрация пользователя
+                        console.log("RESPONSE:",response);
+                        document.getElementById('status').innerHTML = "Спасибо за вход, " + response.name + " EMAIL:"+ response.email + "!";
+                    });
+
+                } else {
+                    // The person is not logged into your webpage or we are unable to tell.
+                    $('#fb_custom_login').show();
+                    $('#fb_custom_logout').hide();
+                }
+            }, {scope: 'public_profile,email',size:'large',auto_logout_link:true,onlogin:function(){ console.log('Запускается после завершения процесса входа');}});
+        });
+        $("#fb_custom_logout").on("click",function(){
+            FB.logout(function(response) {
+                // Person is now logged out
+                $('#fb_custom_login').show();
+                $('#fb_custom_logout').hide();
+                document.getElementById('status').innerHTML = "Вы не авторизованны.";
+            });
+        });
+    });
+
+</script>
+
+
+<div id="status" class="subtitle" ></div>
+
+<!--
+Разрешения на доступ к информации https://developers.facebook.com/docs/permissions/reference#revokelogin
+-->
+
+<section id="login_block" class="section" visible="hidden">
+    <div class="container">
+        <!-- FORM LOGIN USER -->
+        <form class="box" role="form" action="/signin" method="POST" >
+            <input type="hidden" name="_csrf" value="{{_csrfToken}}" >
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input name="email" class="input" type="email" placeholder="email" value="">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Password</label>
+                <div class="control">
+                    <input name="password" class="input" type="password" placeholder="password" value="">
+                </div>
+            </div>
+            <button class="button is-primary">Sign in</button>
+        </form>
+    </div>
+</section>
+
+
